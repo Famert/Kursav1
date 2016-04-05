@@ -82,35 +82,36 @@ int coppy ()
  
 
 int count  characters()
-{ int i=0;
-char strol[50];
-scanf("%s",&strol);
-printf("%s\n",&strol);
-i = strlen(strol);
-printf("%d\n",i);
-system("pause");
-return 0;
+{ 
+        int i=0;
+        char strol[50];
+        scanf("%s",&strol);
+        printf("%s\n",&strol);
+        i = strlen(strol);
+        //printf("%d\n",i);
+        system("pause");
+        return 0;
 }
 // разделение строки на слова //
 int divided str()
 { 
-char str[]="sfaas  fsf sdf sd fsd";
-
-char m[100][100];
-int i=0;
-char *p;
-p = strtok(str," ");
-while(p!=NULL){
-	strcpy(m[i],p);
-	i++;
-	p=strtok(NULL," ");
-}
-int j=0;
-for(int j=0;j<i;j++) {
-	printf("%s \n",m[j]);
-}
-system("pause"); 
-_getch;
-return 0;
+        char str[]="sfaas  fsf sdf sd fsd";
+        char m[100][100];
+        int i=0;
+        char *p;
+        p = strtok(str," ");
+        while(p!=NULL)
+        {
+	        strcpy(m[i],p);
+	        i++;
+        	p=strtok(NULL," ");
+        }
+        int j=0;
+        for(int j=0;j<i;j++)
+        {
+	         printf("%s \n",m[j]);
+        }
+        system("pause"); 
+        return 0;
 }
 
